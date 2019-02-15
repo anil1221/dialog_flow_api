@@ -4,7 +4,7 @@ class HomeController < ApplicationController
   end
 
   def test_method
-    puts "Request Params:  #{params}"
+    puts "Request Params FF NUMBER:  #{params['queryResult']['parameters']['ff_number']}"
     response = {
         "fulfillmentText": "Text response",
         "fulfillmentMessages": [
