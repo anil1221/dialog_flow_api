@@ -4,6 +4,7 @@ class HomeController < ApplicationController
   end
 
   def test_method
+    puts "Request Params:  #{params}"
     response = {
         "fulfillmentText": "Text response",
         "fulfillmentMessages": [
